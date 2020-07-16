@@ -51,7 +51,7 @@ v1.0
 ### Change Log
 
 #### 2020-07-15
-- Complete implementation of program and test. 23:13
+- Complete implementation of program and test. 23:13 PDT
 
 ------------------------------
 For more information on Markdown: https://www.markdownguide.org/cheat-sheet
