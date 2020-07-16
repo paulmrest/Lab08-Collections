@@ -1,12 +1,12 @@
 # Lab 08 - Collections - Phil's Bookstore
 
-## SUBTITLE (if necessary)
-
 *Author: Paul M Rest*
 
 ----
 
 ### Description
+
+A .NET console app that represents a lending library, with five preset books, the ability to add new books, borrow and return books.
 
 ---
 
@@ -24,9 +24,9 @@ Select ```File``` -> ```Open``` -> ```Project/Solution```
 
 Next navigate to the directory you cloned the repository to.
 
-Double click on the ```REPO NAME``` directory.
+Double click on the ```Lab08-Collections``` directory.
 
-Then select and open ```SOLUTION NAME```
+Then select and open ```BookStore```
 
 All method invocations have been commented out in the Main() method. Uncomment the Code Challenge you'd like to run.
 
@@ -40,18 +40,18 @@ Select ```Debug``` -> ```Start Without Debugging```
 
 ### Visuals
 
+![Sample Output](/images/SampleOutput.png)
+
 ---
 
 ### Version
 
+v1.0
+
 ### Change Log
 
-#### DATE 1
-- Change 01
-- Change 02
-.
-.
-.
+#### 2020-07-15
+- Complete implementation of program and test. 23:13
 
 ------------------------------
 For more information on Markdown: https://www.markdownguide.org/cheat-sheet
