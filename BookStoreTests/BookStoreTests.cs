@@ -138,5 +138,45 @@ namespace BookStoreTests
             //Assert
             Assert.Equal(3, testLibrary.Count());
         }
+
+        [Fact]
+        public void AuthorGenderSettableAndGettable()
+        {
+            //Arrange
+            Author testAuthor = new Author("Virginia", "Woolf", Author.Genders.Female);
+
+            //Assert
+            Assert.Equal(Author.Genders.Female, testAuthor.Gender);
+        }
+
+        [Fact]
+        public void AuthorGenderDefaultsCorrectly()
+        {
+            //Arrange
+            Author testAuthor = new Author("Virginia", "Woolf");
+
+            //Assert
+            Assert.Equal(Author.Genders.NotSpecified, testAuthor.Gender);
+        }
+
+        [Fact]
+        public void EmptyLibraryHasCountZero()
+        {
+            //Arrange
+            Library<Book> testLibrary = new Library<Book>();
+
+            //Assert
+            Assert.Equal(0, testLibrary.Count());
+        }
+
+        [Fact]
+        public void EmptyLibraryReturnsNullRemovingBook()
+        {
+            //Arrange
+            Library<Book> testLibrary = new Library<Book>();
+
+            //Assert
+            Assert.Null(testLibrary.Remove("A Book That Never Was"));
+        }
     }
 }
