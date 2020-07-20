@@ -5,7 +5,6 @@ using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
-
 namespace BookStore.Classes
 {
     public class Library<T> : IEnumerable<Book>

@@ -13,7 +13,8 @@ namespace BookStore.Classes
             Other = 1,
             NonBinary,
             Female,
-            Male
+            Male,
+            NotSpecified
         }
 
         public string FirstName { get; set; }
@@ -25,7 +26,7 @@ namespace BookStore.Classes
         public Genders Gender { get; set; }
 
         /// <summary>
-        /// A constructor for a new Author object.
+        /// Instantiates a new 
         /// </summary>
         /// <param name="firstName">
         /// string: a first name
@@ -37,6 +38,15 @@ namespace BookStore.Classes
         {
             FirstName = firstName;
             LastName = lastName;
+            Gender = Genders.NotSpecified;
+        }
+
+
+        public Author(string firstName, string lastName, Genders gender)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Gender = gender;
         }
     }
 }
